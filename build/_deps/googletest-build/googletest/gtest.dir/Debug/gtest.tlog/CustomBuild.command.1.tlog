@@ -1,0 +1,10 @@
+^C:\USERS\USER\SOURCE\REPOS\OS_LAB3\BUILD\_DEPS\GOOGLETEST-SRC\GOOGLETEST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/USER/source/repos/os_lab3 -BC:/Users/USER/source/repos/os_lab3/build --check-stamp-file C:/Users/USER/source/repos/os_lab3/build/_deps/googletest-build/googletest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
